@@ -60,4 +60,51 @@
 //     }
 // }
 #endregion
+#region Q3
+// (a) Traditional switch statement
+// string fileExtension = ".pdf";
+// string fileType;
+
+// switch (fileExtension)
+// {
+//     case ".pdf":
+//         fileType = "PDF Document";
+//         break;
+
+//     case ".doc":
+//     case ".docx":
+//         fileType = "Word Document";
+//         break;
+
+//     case ".xls":
+//     case ".xlsx":
+//         fileType = "Excel Spreadsheet";
+//         break;
+
+//     case ".jpg":
+//     case ".png":
+//     case ".gif":
+//         fileType = "Image File";
+//         break;
+
+//     default:
+//         fileType = "Unknown File Type";
+//         break;
+// }
+// (b) Switch expression
+// string fileExtension = ".pdf";
+
+// string fileType = fileExtension switch
+// {
+//     ".pdf" => "PDF Document",
+
+//     ".doc" or ".docx" => "Word Document",
+
+//     ".xls" or ".xlsx" => "Excel Spreadsheet",
+
+//     ".jpg" or ".png" or ".gif" => "Image File",
+
+//     _ => "Unknown File Type"
+// };
+#endregion
 
