@@ -188,3 +188,58 @@
 //     }
 // }
 #endregion
+#region Q6
+// int[] scores = { 85, 42, 91, 67, 55, 78, 39, 88, 72, 95, 60, 48 };
+// Console.WriteLine("Failing scores:");
+// foreach (int s in scores)
+// {
+//     if (s < 50)
+//         Console.WriteLine(s);
+// }
+// foreach (int s in scores)
+// {
+//     if (s > 90)
+//     {
+//         Console.WriteLine("First score above 90: " + s);
+//         break;
+//     }
+// }
+// int sum = 0;
+// int count = 0;
+
+// foreach (int s in scores)
+// {
+//     if (s >= 40)
+//     {
+//         sum += s;
+//         count++;
+//     }
+// }
+
+// double avg = (double)sum / count;
+// Console.WriteLine("Class average: " + avg);
+// int A = 0, B = 0, C = 0, D = 0, F = 0;
+// foreach (int s in scores)
+// {
+//     if (s >= 90) A++;
+//     else if (s >= 80) B++;
+//     else if (s >= 70) C++;
+//     else if (s >= 60) D++;
+//     else F++;
+// }
+// Console.WriteLine("A: " + A);
+// Console.WriteLine("B: " + B);
+// Console.WriteLine("C: " + C);
+// Console.WriteLine("D: " + D);
+// Console.WriteLine("F: " + F);
+
+// Failing scores → 42 , 39 , 48
+// First score above 90 → 91
+// Average (بدون أقل من 40) ≈ 71.9
+// Grades:
+// A = 2
+// B = 2
+// C = 2
+// D = 2
+// F = 4
+#endregion
