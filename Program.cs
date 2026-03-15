@@ -124,4 +124,67 @@
 // Use if/else when the conditions are many or complex, because it is easier to read and maintain.
 
 #endregion
+#region Q5
+// using System;
 
+// class Program
+// {
+//     static void Main()
+//     {
+//         int attempts = 0;
+//         bool valid;
+
+//         do
+//         {
+//             Console.Write("Enter password: ");
+//             string password = Console.ReadLine();
+
+//             bool hasUpper = false;
+//             bool hasDigit = false;
+//             bool hasSpace = false;
+
+//             foreach (char c in password)
+//             {
+//                 if (char.IsUpper(c))
+//                     hasUpper = true;
+
+//                 if (char.IsDigit(c))
+//                     hasDigit = true;
+
+//                 if (char.IsWhiteSpace(c))
+//                     hasSpace = true;
+//             }
+
+//             valid = password.Length >= 8 && hasUpper && hasDigit && !hasSpace;
+
+//             if (!valid)
+//             {
+//                 Console.WriteLine("Invalid password:");
+
+//                 if (password.Length < 8)
+//                     Console.WriteLine("- Must be at least 8 characters");
+
+//                 if (!hasUpper)
+//                     Console.WriteLine("- Must contain an uppercase letter");
+
+//                 if (!hasDigit)
+//                     Console.WriteLine("- Must contain a digit");
+
+//                 if (hasSpace)
+//                     Console.WriteLine("- No spaces allowed");
+
+//                 attempts++;
+
+//                 if (attempts == 5)
+//                 {
+//                     Console.WriteLine("Account locked");
+//                     return;
+//                 }
+//             }
+
+//         } while (!valid);
+
+//         Console.WriteLine("Password accepted!");
+//     }
+// }
+#endregion
