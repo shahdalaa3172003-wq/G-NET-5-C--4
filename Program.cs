@@ -24,3 +24,47 @@
 // we can use Stopwatch. It measures the execution time of each method so we can see which one is faster. 
 // Usually, the result shows that StringBuilder performs significantly faster when many string operations are required.
 #endregion
+#region Q2
+Traditional switch statement
+A switch statement is used to select one case from multiple possible 
+values instead of using many if-else conditions. It checks the value of a variable and executes the matching case.
+string fileExtension = ".pdf";
+string fileType;
+switch (fileExtension)
+{
+    case ".pdf":
+        fileType = "PDF Document";
+        break;
+
+    case ".doc":
+    case ".docx":
+        fileType = "Word Document";
+        break;
+
+    case ".xls":
+    case ".xlsx":
+        fileType = "Excel Spreadsheet";
+        break;
+
+    case ".jpg":
+    case ".png":
+    case ".gif":
+        fileType = "Image File";
+        break;
+
+    default:
+        fileType = "Unknown File Type";
+        break;
+}
+
+Switch Expression
+A switch expression is a modern and shorter way to write the same logic. It returns a value directly without writing many break statements.
+  string fileType = fileExtension switch
+{
+    ".pdf" => "PDF Document",
+    ".doc" or ".docx" => "Word Document",
+    ".xls" or ".xlsx" => "Excel Spreadsheet",
+    ".jpg" or ".png" or ".gif" => "Image File",
+    _ => "Unknown File Type"
+};
+#endregion
