@@ -25,46 +25,39 @@
 // Usually, the result shows that StringBuilder performs significantly faster when many string operations are required.
 #endregion
 #region Q2
-// Traditional switch statement
-// A switch statement is used to select one case from multiple possible 
-// values instead of using many if-else conditions. It checks the value of a variable and executes the matching case.
-// string fileExtension = ".pdf";
-// string fileType;
-// switch (fileExtension)
+// using System;
+
+// class Program
 // {
-//     case ".pdf":
-//         fileType = "PDF Document";
-//         break;
+//     static void Main()
+//     {
+//         Console.Write("Enter age: ");
+//         int age = int.Parse(Console.ReadLine());
 
-//     case ".doc":
-//     case ".docx":
-//         fileType = "Word Document";
-//         break;
+//         Console.Write("Enter day of week (1-7): ");
+//         int day = int.Parse(Console.ReadLine());
 
-//     case ".xls":
-//     case ".xlsx":
-//         fileType = "Excel Spreadsheet";
-//         break;
+//         Console.Write("Student ID? (yes/no): ");
+//         string student = Console.ReadLine();
 
-//     case ".jpg":
-//     case ".png":
-//     case ".gif":
-//         fileType = "Image File";
-//         break;
+//         double price = 0;
+//         if (age < 5)
+//             price = 0;
+//         else if (age <= 12)
+//             price = 30;
+//         else if (age <= 59)
+//             price = 50;
+//         else
+//             price = 25;
 
-//     default:
-//         fileType = "Unknown File Type";
-//         break;
+//       if ((day == 6 || day == 7) && price > 0)
+//             price += 10;
+
+//         if (student.ToLower() == "yes" && price > 0)
+//             price *= 0.8;
+
+//         Console.WriteLine("Final Price: " + price + " LE");
+//     }
 // }
-
-// Switch Expression
-// A switch expression is a modern and shorter way to write the same logic. It returns a value directly without writing many break statements.
-//   string fileType = fileExtension switch
-// {
-//     ".pdf" => "PDF Document",
-//     ".doc" or ".docx" => "Word Document",
-//     ".xls" or ".xlsx" => "Excel Spreadsheet",
-//     ".jpg" or ".png" or ".gif" => "Image File",
-//     _ => "Unknown File Type"
-// };
 #endregion
+
