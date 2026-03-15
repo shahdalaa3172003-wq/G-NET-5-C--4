@@ -107,4 +107,21 @@
 //     _ => "Unknown File Type"
 // };
 #endregion
+#region Q4
+// int temperature = 35;
+
+// string weatherAdvice =
+//     temperature < 0 ? "Freezing! Stay indoors." :
+//     temperature < 15 ? "Cold. Wear a jacket." :
+//     temperature < 25 ? "Pleasant weather." :
+//     temperature < 35 ? "Warm. Stay hydrated." :
+//     "Hot! Avoid sun exposure.";
+// Is the ternary version more readable?
+// No, usually if/else is clearer when there are many or complex conditions.
+
+// When would you choose one over the other?
+// Use the ternary operator (?:) when the condition is simple and short.
+// Use if/else when the conditions are many or complex, because it is easier to read and maintain.
+
+#endregion
 
